@@ -25,7 +25,7 @@ elements[4].setAttribute('href',talk.link);
 elements.forEach(el => talkBox.appendChild(el));
 
 function getRandomTalk(numTalks) {
-    const day = new Date(Date.now());
+    const day = new Date();
     const seed = day.getMonth() * day.getFullYear() + day.getDate();
     return randRange(seed,numTalks);
 }
